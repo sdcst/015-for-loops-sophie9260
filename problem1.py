@@ -22,3 +22,8 @@ enter a number:4
 ****
 
 """
+n  = input("Enter an integer number that has a value less than 10 that will represent the height and width => ")
+n = int(n)
+
+for i in range(n):
+    print(n*"*")

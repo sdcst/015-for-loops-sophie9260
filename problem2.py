@@ -33,7 +33,29 @@ example:
 Enter a number: 4
 4! is 24
 
+i   total  
+1   1
+2   2
+3   6   
+4   24
+5   120
+6   720
+
 example:
 Enter a number: -4
 Invalid input
 """
+n = input("Enter a postive integer => ")
+n = float(n)
+
+total = 1
+
+if n < 0:
+    print("Invalid input")
+else: 
+    n = int(n)
+    m = n + 1
+    for i in range(1, m):
+        total = total * i
+
+print(f"{n}! is {total}")
